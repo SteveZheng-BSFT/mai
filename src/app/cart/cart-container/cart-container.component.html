@@ -1,17 +1,15 @@
-<h1>Shopping Cart</h1>
+<h1 class="text-md-center">Shopping Cart</h1>
 
 <my-cart-summary></my-cart-summary>
 
-<div class="text-right">
+<div class="text-md-right">
     <my-cart-cost></my-cart-cost>
 
     <div class="row end-xs">
         <div class="col-xs">
-            <div class="box">
-                <button [id]= "'cancelbtn'" [type]="'cancel'" [routerLink]="['/DeviceOptions/DeviceCustomize']">Back</button>
-                <button [id]= "'secondary1cartbtn'" [type]="'button'" [routerLink]="['/DeviceSearch']">Add More</button>
-                <button [id]= "'primarynextbtn'" [type]="'button'">Pay Now!</button>
-            </div>
+            <button class="btn btn-secondary" type="button" [routerLink]="['/DeviceOptions/DeviceCustomize']">Back</button>
+            <button class="btn btn-primary" type="button" [routerLink]="['/DeviceSearch']">Add More</button>
+            <button class="btn btn-success" type="button">Pay Now!</button>
         </div>
     </div>
 </div>
