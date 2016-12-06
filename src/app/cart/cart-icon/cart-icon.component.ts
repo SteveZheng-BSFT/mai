@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService } from '../../shared/services/cart/cart.service';
+import { CartService } from 'services/cart';
 
 @Component({
     selector: 'my-cart-icon',

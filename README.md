@@ -29,3 +29,18 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## config notice
+Style(sass) file relative path import ==> path mapping:
+> modify webpack   
+
+Module resolution (non-relative module imports):
+doc here: http://www.typescriptlang.org/docs/handbook/module-resolution.html#virtual-directories-with-rootdirs
+> go to tsconfig.json set like this
+```
+"baseUrl": ".",
+"paths": {
+  "module/*": ["app/*"],
+  "services/*": ["app/shared/services/*"]
+},
+```

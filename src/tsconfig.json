@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "",
+    "baseUrl": ".",
+    "paths": {
+      "module/*": ["app/*"],
+      "services/*": ["app/shared/services/*"],
+      "styles": ["styles.scss"]
+    },
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
