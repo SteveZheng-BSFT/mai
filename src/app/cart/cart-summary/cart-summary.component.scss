@@ -1,0 +1,8 @@
+// should have global color & font set up
+@import "../../../styles";
+
+// component scss goes here
+.delete-sign {
+  cursor: pointer;
+  color: red;
+}

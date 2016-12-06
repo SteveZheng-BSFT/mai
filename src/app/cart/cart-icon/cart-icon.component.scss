@@ -1,0 +1,23 @@
+// should have global color & font set up
+@import "../../../styles";
+
+// component scss goes here
+div {
+  display: inline-block;
+  position: relative;
+  padding: 5px;
+  font-size: large;
+  cursor: pointer;
+}
+span.circle-number {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  color: deepskyblue;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.2em;
+  width: 1.2em;
+  left: 60%;
+  bottom: 0;
+}

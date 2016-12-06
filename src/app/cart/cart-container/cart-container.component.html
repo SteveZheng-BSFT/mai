@@ -1,0 +1,21 @@
+<h1>Shopping Cart</h1>
+
+<my-cart-summary></my-cart-summary>
+
+<div class="text-right">
+    <my-cart-cost></my-cart-cost>
+
+    <div class="row end-xs">
+        <div class="col-xs">
+            <div class="box">
+                <button [id]= "'cancelbtn'" [type]="'cancel'" [routerLink]="['/DeviceOptions/DeviceCustomize']">Back</button>
+                <button [id]= "'secondary1cartbtn'" [type]="'button'" [routerLink]="['/DeviceSearch']">Add More</button>
+                <button [id]= "'primarynextbtn'" [type]="'button'">Pay Now!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<pre style="background-color: #999;">-->
+    <!--{{items[0].device.options | json}}-->
+<!--</pre>-->
