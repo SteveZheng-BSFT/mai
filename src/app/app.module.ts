@@ -5,8 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DeviceModule } from './device/device.module';
-import { CartModule } from './cart/cart.module';
 import { AppRoutingModule } from './app-routing.module';
+import { CartModule } from './cart/cart.module';
 
 @NgModule({
   declarations: [

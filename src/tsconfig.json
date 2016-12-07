@@ -2,9 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "module/*": ["app/*"],
-      "services/*": ["app/shared/services/*"],
-      "styles": ["styles.scss"]
+      "cmps/*": ["app/shared/components/*"],
+      "directives/*": ["app/shared/directives/*"],
+      "services/*": ["app/shared/services/*"]
     },
     "declaration": false,
     "emitDecoratorMetadata": true,
