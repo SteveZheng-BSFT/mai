@@ -7,12 +7,10 @@ import { CartService } from 'services/cart';
     styleUrls: ['./cart-icon.component.scss']
 })
 export class CartIconComponent implements OnInit {
-    quantity: number;
     constructor(public cartService: CartService) {
     }
 
     ngOnInit() {
-        this.quantity = this.cartService.getQuantity();
     }
 }
 

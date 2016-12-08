@@ -7,12 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class DeviceViewComponent implements OnInit {
-  ngOnInit(): void {
-  }
 
   @Input() device: any;
 
   constructor() {
+  }
+
+  ngOnInit(): void {
   }
 }
 
