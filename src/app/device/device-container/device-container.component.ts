@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BtnNavService } from 'services/btn-nav/btn-nav.service';
 
 @Component({
   selector: 'app-device-container',
@@ -6,10 +7,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./device-container.component.scss']
 })
 export class DeviceContainerComponent implements OnInit {
-
-  constructor() { }
+  // tell service which btn info we'll use for deep routing
+  private _btnNavData: Object = {
+    NoBtn: { // used for pages without button
+      routerLink: '',
+      disabled: false,
+      text: ''
+    },
+    DeviceInfo: {
+      routerLink: '/DeviceOptions',
+      disabled: false,
+      text: 'Next'
+    },
+    DeviceConfig: {
+      routerLink: '/DeviceOptions/DeviceConfig',
+      disabled: true,
+      text: 'Next'
+    },
+    DeviceCustomize: {
+      routerLink: '/DeviceOptions/DeviceConfig',
+      disabled: true,
+      text: 'Add to Cart'
+    }
+  };
+  constructor(public btnNavService: BtnNavService) { }
 
   ngOnInit() {
+    this.btnNavService.setBtnNavData(this._btnNavData);
   }
 
 }

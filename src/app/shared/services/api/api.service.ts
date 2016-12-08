@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Headers, Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
-import { LoggerService } from '../logger';
 import 'rxjs/Rx';
 import 'rxjs/add/observable/throw';
 
@@ -15,7 +14,7 @@ export class ApiService {
 
   api_url: string = 'http://localhost:3000';
 
-  constructor(private http: Http, private logger: LoggerService) { }
+  constructor(private http: Http) { }
 
   private getJson (response: Response) {
     return response.json();
@@ -27,7 +26,6 @@ export class ApiService {
     } else {
       let error = new Error(response.statusText);
       error['response'] =  response;
-      this.logger.log('Error Detected', this, 'log', 'ApiService');
       console.error(error);
       throw error;
     }

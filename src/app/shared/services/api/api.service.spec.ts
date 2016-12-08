@@ -1,14 +1,12 @@
 import { inject, TestBed } from '@angular/core/testing';
 import { HttpModule } from '@angular/http';
 import { ApiService } from './api.service';
-import { LoggerService } from '../logger';
 
 describe('ApiService', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             providers: [
-                ApiService,
-                LoggerService
+                ApiService
             ],
             imports: [
                 HttpModule
@@ -22,6 +20,6 @@ describe('ApiService', () => {
     }));
 
     it('should have a title property equal to XFINITY Mobile Retail', inject([ApiService], (api) => {
-      expect(api.title).toBe('XFINITY Mobile Retail'); // we need to come back and fix this(102816)
+      expect(api.title).toBe('XFINITY Mobile Retail'); // we need to come go-back and fix this(102816)
     }));
 });

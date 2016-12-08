@@ -1,3 +1,20 @@
-<p>
-  device-info works!
-</p>
+<div class="row">
+  <div class="col-xs-7 col-sm-7 col-md-7">
+    <img alt="'Galaxy S7'" [src]="'assets/imgs/phones/samsung-galaxy-s7-sample.png'">
+  </div>
+
+  <div class="col-xs-5 col-sm-5 col-md-5">
+    <div class="text-md-left">
+      <h2>{{customerDevice.catalogDevice.name}}</h2>
+      <ul>
+        <li>{{customerDevice.catalogDevice.colorName}}, {{customerDevice.catalogDevice.capacity}}</li>
+        <li>IMEI: {{customerDevice.options.IMEI}}</li>
+        <li>SIM (included):</li>
+        <li>{{customerDevice.options.ICCid}}</li>
+      </ul>
+      <form [formGroup]="myForm" class="form-inline">
+        <input [formControl]="myForm.controls['sim']" type="text" placeholder="Scan a different SIM" class="form-control">
+      </form>
+    </div>
+  </div>
+</div>

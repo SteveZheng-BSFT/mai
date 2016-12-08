@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { DeviceModule } from './device/device.module';
 import { AppRoutingModule } from './app-routing.module';
 import { CartModule } from './cart/cart.module';
+import { ApiService } from 'services/api';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,12 @@ import { CartModule } from './cart/cart.module';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
     AppRoutingModule,
     DeviceModule,
     CartModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

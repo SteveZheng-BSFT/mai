@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 
-import { BackDirective } from './back';
+import { GoBackDirective } from './go-back';
 import { CommonModule } from '@angular/common';
+import { CancelItemDirective } from './cancel-item/cancel-item.directive';
 
 @NgModule({
     imports: [CommonModule],
-    exports: [BackDirective],
-    declarations: [BackDirective]
+    exports: [GoBackDirective, CancelItemDirective],
+    declarations: [GoBackDirective, CancelItemDirective]
 })
 export class DirectivesModule { }

@@ -1,0 +1,22 @@
+<h2>{{device.catalogDevice.brand +' '+device.catalogDevice.name}}</h2>
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4">
+        <div class="box">
+            <!--<my-device-img [size]="'large'" [alt]="'Galaxy S7'" [src]="'img/phones/samsung/colors/black/samsung-galaxy-s7-sample.png'"></my-device-img>-->
+        </div>
+    </div>
+
+    <div class="col-xs col-sm col-md">
+        <div class="box device-config-view-data">
+            <div class="device-info">
+                <div>{{device.catalogDevice.colorName}}, {{device.catalogDevice.capacity}}</div>
+                <div>IMEI: #{{device.options.IMEI}}</div>
+            </div>
+            <div class="plan-info">
+                <div>Data plan: {{device.options.dataPlan.data}}</div>
+                <div>Payment plan: {{device.options.paymentPlan.payment}}</div>
+                <div>Protection: {{device.options.insurancePlan.insurance}}</div>
+            </div>
+        </div>
+    </div>
+</div>
