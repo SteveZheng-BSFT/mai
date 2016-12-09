@@ -15,7 +15,7 @@ export class CancelItemDirective {
   }
 
   @HostListener('click') onClick() {
-    this.router.navigate(['/DeviceSearch']);
+    this.router.navigate(['']);
   }
 
 }

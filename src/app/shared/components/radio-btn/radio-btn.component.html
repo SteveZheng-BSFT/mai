@@ -1,0 +1,14 @@
+<!--must provide id because input needs to associate with label -->
+<!--otherwise the label you clicked doesn't know which input you are checking-->
+<!--label for should also need to use attr.for-->
+<form #f="ngForm">
+    <div class="row">
+        <div *ngFor="let option of options" class="col-xs col-sm col-md">
+            <input [ngModel]="model" id="{{option.id}}" type="radio" name="{{group}}" value="{{option.title}}" (ngModelChange)="get_selected($event)" disabled="{{option.disabled}}">
+            <label class="radio my-radio-btn" [ngClass]="option.disabled" for="{{option.id}}">
+                <span class="title">{{option.title}}</span>
+                <span class="description" *ngIf="option.description">{{option.description}}</span>
+            </label>
+        </div>
+    </div>
+</form>
