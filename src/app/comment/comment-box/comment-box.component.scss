@@ -1,0 +1,16 @@
+.form-group {
+  position: relative;
+}
+input+label {
+  position: absolute;
+  bottom: 23px;
+  left: 13px;
+  color: darkgray;
+  cursor: text;
+  transition: all 0.5s;
+}
+input:focus+label {
+  font-size: 0.7rem;
+  bottom: 40px;
+  color: deepskyblue;
+}

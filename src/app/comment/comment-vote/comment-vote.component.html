@@ -1,0 +1,15 @@
+<div class="row add-margin">
+  <div class="col-md-1 bg-faded text-md-center vote-box">
+    <div class="arrow-up" (click)="voteUp()"></div>
+    {{comment.getVotes()}}
+    <div class="arrow-down" (click)="voteDown()"></div>
+  </div>
+  <div class="col-md">
+    <div class="row">
+      <div class="col-md">{{comment.getContent()}}</div>
+    </div>
+    <div class="row">
+      <div class="col-md">-- {{comment.getUsername()}}</div>
+    </div>
+  </div>
+</div>

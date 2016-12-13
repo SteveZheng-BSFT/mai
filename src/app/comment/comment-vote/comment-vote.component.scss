@@ -1,0 +1,32 @@
+.add-margin {
+  margin: 10px;
+}
+
+.vote-box {
+  position: relative;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.arrow-up {
+  position: absolute;
+  left: 40%;
+  top: 8%;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid gray;
+  cursor: pointer;
+}
+
+.arrow-down {
+  position: absolute;
+  left: 40%;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid gray;
+  cursor: pointer;
+}

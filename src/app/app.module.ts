@@ -8,6 +8,7 @@ import { DeviceModule } from './device/device.module';
 import { AppRoutingModule } from './app-routing.module';
 import { CartModule } from './cart/cart.module';
 import { ApiService } from 'services/api';
+import { CommentModule } from './comment/comment.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ApiService } from 'services/api';
     HttpModule,
     AppRoutingModule,
     DeviceModule,
-    CartModule
+    CartModule,
+    CommentModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

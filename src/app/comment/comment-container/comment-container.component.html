@@ -1,0 +1,4 @@
+<app-comment-box (commentEvent)="saveComment($event)"></app-comment-box>
+<div *ngFor="let comment of comments">
+  <app-comment-vote [comment]="comment"></app-comment-vote>
+</div>
