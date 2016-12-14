@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CartService } from 'services/cart';
 import { CartRoutingModule } from './cart-routing.module';
 import { CartContainerComponent } from './cart-container';
 import { CartIconComponent } from './cart-icon';
 import { CartCostComponent } from './cart-cost';
 import { CartSummaryComponent } from './cart-summary';
-import { DirectivesModule } from 'directives/directives.module';
+import { DirectivesModule } from '../shared/directives/directives.module';
+import { CartService } from '../shared/services/cart/cart.service';
 
 @NgModule({
   imports: [

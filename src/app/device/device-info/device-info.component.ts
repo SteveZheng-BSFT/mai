@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { BtnNavService } from 'services/btn-nav/btn-nav.service';
 import { FormGroup, AbstractControl, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CartService } from 'services/cart';
-import { CustomerDeviceService } from 'services/customer-device';
+import { CartService } from '../../shared/services/cart/cart.service';
+import { CustomerDeviceService } from '../../shared/services/customer-device/customer-device.service';
+import { BtnNavService } from '../../shared/services/btn-nav/btn-nav.service';
 
 @Component({
   selector: 'app-device-info',

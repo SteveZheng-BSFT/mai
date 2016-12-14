@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BtnNavService } from 'services/btn-nav/btn-nav.service';
+import { BtnNavService } from '../../shared/services/btn-nav/btn-nav.service';
 
 @Component({
   selector: 'app-device-container',

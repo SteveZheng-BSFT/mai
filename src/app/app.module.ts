@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { DeviceModule } from './device/device.module';
 import { AppRoutingModule } from './app-routing.module';
 import { CartModule } from './cart/cart.module';
-import { ApiService } from 'services/api';
 import { CommentModule } from './comment/comment.module';
+import { ApiService } from './shared/services/api/api.service';
 
 @NgModule({
   declarations: [

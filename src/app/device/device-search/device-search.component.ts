@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CatalogDeviceService } from 'services/catalog-device/catalog-device.service';
-import { CustomerDeviceService } from 'services/customer-device';
 import { Router } from '@angular/router';
-import { BtnNavService } from 'services/btn-nav/btn-nav.service';
+import { CatalogDeviceService } from '../../shared/services/catalog-device/catalog-device.service';
+import { CustomerDeviceService } from '../../shared/services/customer-device/customer-device.service';
+import { BtnNavService } from '../../shared/services/btn-nav/btn-nav.service';
 
 @Component({
   selector: 'app-device-search',

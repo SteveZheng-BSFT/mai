@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Item, CartService } from 'services/cart';
+import { Item } from '../../shared/services/cart/item';
+import { CartService } from '../../shared/services/cart/cart.service';
 
 @Component({
     selector: 'my-cart-summary',

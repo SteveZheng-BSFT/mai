@@ -8,13 +8,14 @@ import { CommonModule } from '@angular/common';
 import { CommentContainerComponent } from './comment-container/comment-container.component';
 import { CommentVoteComponent } from './comment-vote/comment-vote.component';
 import { CommentRoutingModule } from './comment-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     imports: [
       CommonModule,
       CommentRoutingModule,
-      FormsModule
+      FormsModule,
+      ReactiveFormsModule
     ],
     exports: [],
     declarations: [CommentBoxComponent, CommentContainerComponent, CommentVoteComponent],

@@ -1,9 +1,8 @@
-@import 'standards';
 
 // component scss goes here
 .my-radio-btn {
-  border: solid 1px $cool-grey7;
-  background-color: $white;
+  border: solid 1px grey;
+  background-color: white;
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
@@ -19,29 +18,26 @@ input[type='radio'] {
     .title {
       display: block;
       font-size: 22px;
-      font-family: $xfinity-light;
     }
 
     .description {
       display: block;
-      font-family: $xfinity-thin;
       font-size: 18px;
-      color: $cool-grey10;
+      color: grey;
     }
   }
 
   &:checked + label {
     border: 1px solid transparent;
-    background-color: $blue-sky;
-    color: $white;
+    background-color: deepskyblue;
+    color: white;
 
     .description, .title {
-      color: $white;
-      font-family: $xfinity-light;
+      color: white;
     }
   }
 }
 
 .disabled {
-  background-color: $cool-grey6;
+  background-color: grey;
 }

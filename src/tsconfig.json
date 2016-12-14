@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "cmps/*": ["app/shared/components/*"],
-      "directives/*": ["app/shared/directives/*"],
-      "services/*": ["app/shared/services/*"]
-    },
+//    "baseUrl": ".", // comment for now since karma can't recognize path
+//    "paths": {
+//      "cmps/*": ["app/shared/components/*"],
+//      "directives/*": ["app/shared/directives/*"],
+//      "services/*": ["app/shared/services/*"]
+//    },
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
