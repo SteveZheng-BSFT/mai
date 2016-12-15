@@ -11,7 +11,7 @@ export class GoBackDirective {
     renderer.setElementAttribute(el.nativeElement, 'type', 'button');
     renderer.setElementClass(el.nativeElement, 'btn', true);
     renderer.setElementClass(el.nativeElement, 'btn-link', true);
-    if (this.appGoBack = 'white') {
+    if (this.appGoBack == 'white') {
       renderer.setElementStyle(el.nativeElement, 'color', 'white');
     }
   }

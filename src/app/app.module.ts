@@ -9,10 +9,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { CartModule } from './cart/cart.module';
 import { CommentModule } from './comment/comment.module';
 import { ApiService } from './shared/services/api/api.service';
+import { MoneyPipe } from './shared/pipes/money/money.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MoneyPipe,
   ],
   imports: [
     BrowserModule,
