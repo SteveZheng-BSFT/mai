@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
+  "browser": {
+    "services": "./src/app/shared/services"
+  },
   "scripts": {
     "start": "ng serve --host 10.36.77.143 --port 4200 --live-reload-port 49153",
     "lint": "tslint \"src/**/*.ts\"",
